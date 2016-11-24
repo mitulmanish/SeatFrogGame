@@ -1,25 +1,140 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j6D-0w-ncS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Fruitsy-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeatFrogGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-Go-EwX">
+                                <rect key="frame" x="18" y="69" width="285" height="451"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="451" id="os0-WO-LAy"/>
+                                    <constraint firstAttribute="width" constant="285" id="t5Z-aU-Esa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bZH-8v-PoL">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="0iT-gg-Ucl" customClass="CardCollectionViewCell" customModule="SeatFrogGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Question Shield Filled-60" translatesAutoresizingMaskIntoConstraints="NO" id="5Lk-1P-maf">
+                                                    <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="hdl-T3-EbN"/>
+                                                        <constraint firstAttribute="width" constant="60" id="vIY-fl-VCv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JM3-Lu-WjJ">
+                                                    <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="Jvr-8I-AS0"/>
+                                                        <constraint firstAttribute="width" constant="60" id="xl8-0K-Bmo"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="JM3-Lu-WjJ" secondAttribute="trailing" constant="10" id="0gJ-1l-rZu"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Lk-1P-maf" secondAttribute="trailing" constant="10" id="3na-ZP-D8K"/>
+                                            <constraint firstItem="5Lk-1P-maf" firstAttribute="top" secondItem="0iT-gg-Ucl" secondAttribute="top" constant="10" id="Ncv-ra-hMB"/>
+                                            <constraint firstItem="JM3-Lu-WjJ" firstAttribute="leading" secondItem="0iT-gg-Ucl" secondAttribute="leading" constant="10" id="Pgd-iG-PIo"/>
+                                            <constraint firstAttribute="bottom" secondItem="JM3-Lu-WjJ" secondAttribute="bottom" constant="10" id="fN5-5y-3aw"/>
+                                            <constraint firstAttribute="bottom" secondItem="5Lk-1P-maf" secondAttribute="bottom" constant="10" id="o9P-Qd-0Cu"/>
+                                            <constraint firstItem="5Lk-1P-maf" firstAttribute="leading" secondItem="0iT-gg-Ucl" secondAttribute="leading" constant="10" id="p5r-Fv-h88"/>
+                                            <constraint firstItem="JM3-Lu-WjJ" firstAttribute="top" secondItem="0iT-gg-Ucl" secondAttribute="top" constant="10" id="pcy-d5-tw8"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="backImage" destination="5Lk-1P-maf" id="mAC-rE-KRN"/>
+                                            <outlet property="frontImage" destination="JM3-Lu-WjJ" id="Aad-mt-m0T"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="03P-XL-FMN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fnT-gU-gdq"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gBB-Go-EwX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EuD-1d-3Uf"/>
+                            <constraint firstItem="gBB-Go-EwX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10.5" id="piv-d1-jwL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Fruitsy" id="Jpr-cS-SxP">
+                        <leftBarButtonItems>
+                            <barButtonItem image="Stop-36" id="8ZN-pt-PkM">
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="BYZ-38-t0r" id="LKK-Kn-dQS"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Trophy-36" id="f8N-Mq-thG">
+                                <connections>
+                                    <action selector="trophyButtonTouched:" destination="BYZ-38-t0r" id="HtK-Ge-4nd"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="Play-36" id="2Rk-Nh-mUT">
+                            <connections>
+                                <action selector="startButtonPressed:" destination="BYZ-38-t0r" id="tsI-H6-fnv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="gBB-Go-EwX" id="ynF-x5-uue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1057" y="350"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U39-8r-4bU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j6D-0w-ncS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hQX-r2-oYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vj0-86-5Qr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqF-RU-Oct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="977"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Play-36" width="36" height="36"/>
+        <image name="Question Shield Filled-60" width="60" height="60"/>
+        <image name="Stop-36" width="36" height="36"/>
+        <image name="Trophy-36" width="36" height="36"/>
+    </resources>
 </document>

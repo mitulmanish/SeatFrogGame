@@ -14,6 +14,12 @@
 		DD2A42B01DE60ACE00545F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2A42AE1DE60ACE00545F1C /* LaunchScreen.storyboard */; };
 		DD2A42BB1DE60ACE00545F1C /* SeatFrogGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A42BA1DE60ACE00545F1C /* SeatFrogGameTests.swift */; };
 		DD2A42C61DE60ACE00545F1C /* SeatFrogGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A42C51DE60ACE00545F1C /* SeatFrogGameUITests.swift */; };
+		DD2A42D61DE6104800545F1C /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A42D51DE6104800545F1C /* CardCollectionViewCell.swift */; };
+		DD2A42D81DE6107600545F1C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A42D71DE6107600545F1C /* Card.swift */; };
+		DD7B53E31DE675AA000EDF74 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53E21DE675AA000EDF74 /* GameBrain.swift */; };
+		DD7B53E51DE67722000EDF74 /* ImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53E41DE67722000EDF74 /* ImageFactory.swift */; };
+		DD7B53EC1DE6921C000EDF74 /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53EB1DE6921C000EDF74 /* GameDelegate.swift */; };
+		DD7B53EE1DE69255000EDF74 /* ScoreKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53ED1DE69255000EDF74 /* ScoreKeeper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		DD2A42C11DE60ACE00545F1C /* SeatFrogGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeatFrogGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2A42C51DE60ACE00545F1C /* SeatFrogGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatFrogGameUITests.swift; sourceTree = "<group>"; };
 		DD2A42C71DE60ACE00545F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2A42D51DE6104800545F1C /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD2A42D71DE6107600545F1C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DD7B53E21DE675AA000EDF74 /* GameBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
+		DD7B53E41DE67722000EDF74 /* ImageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFactory.swift; sourceTree = "<group>"; };
+		DD7B53EB1DE6921C000EDF74 /* GameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
+		DD7B53ED1DE69255000EDF74 /* ScoreKeeper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreKeeper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,11 @@
 		DD2A42A41DE60ACD00545F1C /* SeatFrogGame */ = {
 			isa = PBXGroup;
 			children = (
-				DD2A42A51DE60ACE00545F1C /* AppDelegate.swift */,
-				DD2A42A71DE60ACE00545F1C /* ViewController.swift */,
-				DD2A42A91DE60ACE00545F1C /* Main.storyboard */,
-				DD2A42AC1DE60ACE00545F1C /* Assets.xcassets */,
-				DD2A42AE1DE60ACE00545F1C /* LaunchScreen.storyboard */,
-				DD2A42B11DE60ACE00545F1C /* Info.plist */,
+				DD7B53EA1DE6919D000EDF74 /* Supporting Files */,
+				DD7B53E91DE69196000EDF74 /* Delegate */,
+				DD7B53E81DE68FDD000EDF74 /* Controller */,
+				DD7B53E71DE68FD6000EDF74 /* View */,
+				DD7B53E61DE68FCC000EDF74 /* Model */,
 			);
 			path = SeatFrogGame;
 			sourceTree = "<group>";
@@ -123,6 +134,53 @@
 				DD2A42C71DE60ACE00545F1C /* Info.plist */,
 			);
 			path = SeatFrogGameUITests;
+			sourceTree = "<group>";
+		};
+		DD7B53E61DE68FCC000EDF74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD7B53E21DE675AA000EDF74 /* GameBrain.swift */,
+				DD2A42D71DE6107600545F1C /* Card.swift */,
+				DD7B53ED1DE69255000EDF74 /* ScoreKeeper.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DD7B53E71DE68FD6000EDF74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A42A91DE60ACE00545F1C /* Main.storyboard */,
+				DD2A42AE1DE60ACE00545F1C /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DD7B53E81DE68FDD000EDF74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A42D51DE6104800545F1C /* CardCollectionViewCell.swift */,
+				DD2A42A71DE60ACE00545F1C /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DD7B53E91DE69196000EDF74 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DD7B53EB1DE6921C000EDF74 /* GameDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		DD7B53EA1DE6919D000EDF74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD2A42A51DE60ACE00545F1C /* AppDelegate.swift */,
+				DD2A42B11DE60ACE00545F1C /* Info.plist */,
+				DD7B53E41DE67722000EDF74 /* ImageFactory.swift */,
+				DD2A42AC1DE60ACE00545F1C /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +251,7 @@
 				TargetAttributes = {
 					DD2A42A11DE60ACD00545F1C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RNF8E69GKB;
 					};
 					DD2A42B51DE60ACE00545F1C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,8 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7B53E51DE67722000EDF74 /* ImageFactory.swift in Sources */,
 				DD2A42A81DE60ACE00545F1C /* ViewController.swift in Sources */,
+				DD7B53E31DE675AA000EDF74 /* GameBrain.swift in Sources */,
+				DD2A42D61DE6104800545F1C /* CardCollectionViewCell.swift in Sources */,
+				DD7B53EE1DE69255000EDF74 /* ScoreKeeper.swift in Sources */,
 				DD2A42A61DE60ACE00545F1C /* AppDelegate.swift in Sources */,
+				DD7B53EC1DE6921C000EDF74 /* GameDelegate.swift in Sources */,
+				DD2A42D81DE6107600545F1C /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +466,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SeatFrogGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.SeatFrogGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +480,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SeatFrogGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmit.SeatFrogGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +555,7 @@
 				DD2A42CC1DE60ACE00545F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2A42CD1DE60ACE00545F1C /* Build configuration list for PBXNativeTarget "SeatFrogGameTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +564,7 @@
 				DD2A42CF1DE60ACE00545F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2A42D01DE60ACE00545F1C /* Build configuration list for PBXNativeTarget "SeatFrogGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +573,7 @@
 				DD2A42D21DE60ACE00545F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
