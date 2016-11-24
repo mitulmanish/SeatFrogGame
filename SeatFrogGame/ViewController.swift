@@ -112,7 +112,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func cardGameDidEnd(game: GameBrain, elapsedTime: NSTimeInterval, cards: [Card], chance: Int) {
         let ms = elapsedTime * 1000
         let seconds = Int(ms % 60)
-        print("Seconds taken \(seconds)")
         
         highestScore = returnHighestScore(seconds)
        

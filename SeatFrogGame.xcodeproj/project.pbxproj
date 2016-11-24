@@ -19,7 +19,6 @@
 		DD7B53E31DE675AA000EDF74 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53E21DE675AA000EDF74 /* GameBrain.swift */; };
 		DD7B53E51DE67722000EDF74 /* ImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53E41DE67722000EDF74 /* ImageFactory.swift */; };
 		DD7B53EC1DE6921C000EDF74 /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53EB1DE6921C000EDF74 /* GameDelegate.swift */; };
-		DD7B53EE1DE69255000EDF74 /* ScoreKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B53ED1DE69255000EDF74 /* ScoreKeeper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		DD7B53E21DE675AA000EDF74 /* GameBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
 		DD7B53E41DE67722000EDF74 /* ImageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFactory.swift; sourceTree = "<group>"; };
 		DD7B53EB1DE6921C000EDF74 /* GameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
-		DD7B53ED1DE69255000EDF74 /* ScoreKeeper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreKeeper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +139,6 @@
 			children = (
 				DD7B53E21DE675AA000EDF74 /* GameBrain.swift */,
 				DD2A42D71DE6107600545F1C /* Card.swift */,
-				DD7B53ED1DE69255000EDF74 /* ScoreKeeper.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -319,7 +316,6 @@
 				DD2A42A81DE60ACE00545F1C /* ViewController.swift in Sources */,
 				DD7B53E31DE675AA000EDF74 /* GameBrain.swift in Sources */,
 				DD2A42D61DE6104800545F1C /* CardCollectionViewCell.swift in Sources */,
-				DD7B53EE1DE69255000EDF74 /* ScoreKeeper.swift in Sources */,
 				DD2A42A61DE60ACE00545F1C /* AppDelegate.swift in Sources */,
 				DD7B53EC1DE6921C000EDF74 /* GameDelegate.swift in Sources */,
 				DD2A42D81DE6107600545F1C /* Card.swift in Sources */,

@@ -48,7 +48,6 @@ class GameBrain {
     func indexForCard(card: Card) -> Int? {
         for index in 0...cards.count-1 {
             if card === cards[index] {
-                print("===")
                 return index
             }
         }
@@ -104,11 +103,9 @@ class GameBrain {
             let unPairedCard = getUnPairedCard()
             // check if the card selected currently matches the unpaired card
             if unPairedCard!.cardsEqual(card) {
-                print("cards are same")
                 // if yes add the currently selected card to the shown cards list
                 cardsShown.append(card)
             } else {
-                print("cards are not same")
                 // if the currently selected card does match the unpaired card,remove both the cards(from the view) and also remove the
                 // unpaired card from the shown cards list
                 let unPairedCard = cardsShown.removeLast()
